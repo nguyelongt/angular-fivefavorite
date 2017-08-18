@@ -1,0 +1,22 @@
+<div>
+    <table class="table table-bordered table-striped table-responsive">
+        <thead>
+            <tr>
+                <th>Favorite Movie List</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let favorites of favorites">
+                <td id="fav-table">{{favorites.name}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <form>
+        <div class="form-group">
+            <label for="movie">Movies To Add:</label>
+            <input ng-model="movie.text" type="text" class="form-control" id="movie">
+            <button (click)="dataControl()">Click me!</button>
+        </div>
+    </form>
+</div>
